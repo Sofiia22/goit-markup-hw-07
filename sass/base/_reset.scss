@@ -1,0 +1,49 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+.header {
+    min-height: 80px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.header-con {
+    display: flex;
+    align-items: center;
+}
