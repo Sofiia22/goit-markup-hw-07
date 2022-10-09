@@ -17,6 +17,11 @@ ol {
 body {
     font-family: "Roboto", sans-serif;
 }
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
 button {
     cursor: pointer;
 }
@@ -26,24 +31,10 @@ img {
     max-width: 100%;
     height: auto;
 }
-
-.link {
-    text-decoration: none;
-}
-
 .list {
     list-style: none;
 }
-.header {
-    min-height: 80px;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #ECECEC;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-}
 
-.header-con {
-    display: flex;
-    align-items: center;
+.link {
+    text-decoration: none;
 }

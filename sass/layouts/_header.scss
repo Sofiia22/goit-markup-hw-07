@@ -7,12 +7,11 @@
     line-height: 1.14;
 }
 
-.header-con {
+.header__container {
     display: flex;
     align-items: center;
 }
-
-.header__logo {
+.logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -25,43 +24,46 @@
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 93px;
-
 }
 
-
-.header__logo--black {
-    color: #212121;
-}
-
-.logo__part {
+.header__logo {
     color: #2196F3;
 }
 
+.logo__part {
+    color: #000000;
+}
 
+.navigation {
+    color: #212121;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
 
-
-.navagation {
+.header__navigation {
     display: flex;
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 93px;
     text-align: center;
     margin-bottom: 0;
     align-items: center;
 }
 
-.navagation__list {
+.navigation__list {
     list-style: none;
     display: flex;
     padding: 0;
-    margin-left: 93px;
+    /* margin-left: 93px; */
 
 }
 
-.navagation__list .navagation__item:not(:last-child) {
+.navigation__list .navigation__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.navagation__link {
+.navigation__link {
     align-items: center;
     display: flex;
     padding-top: 32px;
@@ -69,35 +71,31 @@
 
     color: #212121;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.navigation__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.12;
+        letter-spacing: 0.02em;
+        color: #212121;
+        text-decoration: none;
+        display: block;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
 }
 
-.navagation__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.12;
-    letter-spacing: 0.02em;
-    color: #212121;
-    text-decoration: none;
-    display: block;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-
-
-
-.navagation__list .navagation__link:hover,
-.navagation__list .navagation__link:focus {
+.navigation__list .navigation__link:hover,
+.navigation__list .navigation__link:focus {
     color: #2196F3;
 }
 
-
-.navagation__item {
+.navigation__item {
     position: relative;
+    margin-right: 50px;
 }
 
-.current::after {
+.navigation__link--current::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -108,21 +106,22 @@
     border-radius: 2px;
     background-color: #2196F3;
 
+.navigation__link--current {
+        color: #2196F3;
+    }
 }
 
-.current {
-    color: #2196F3;
-}
-
-
-
-.connect__list {
-    display: flex;
+.connect {
     margin-left: auto;
 }
 
 .connect__list .connect__item:not(:last-child) {
     margin-right: 50px;
+}
+
+.connect__list {
+    display: flex;
+    margin-left: auto;
 }
 
 .connect__list a {
@@ -134,15 +133,13 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+& a:hover,
+& a:focus {
+        color: #2196f3;
+    }
 }
 
-.connect__list a:hover,
-.connect__list a:focus {
-    color: #2196f3;
-}
-
-.connect__icons {
+.contact__icon {
     fill: currentColor;
     margin-right: 10px;
-    align-items: center;
 }
